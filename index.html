@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+         margin: 0;
+         height: 100vh;
+      }
+
+      .contenedor-flexible {
+         display: flex;
+         flex-direction: row;
+         background-color: grey;
+         justify-content: flex-start;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         height: 100%; 
+         align-content: flex-start;
+      }
+
+      .elemento-flexible {
+         font-size: 2rem;
+         color: white;
+      }
+      .columna {
+         flex-basis: 50%;
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         flex-grow: 1;
+         flex-shrink: 1;
+      }
+
+      .uno {
+         background-color: rgb(236, 113, 113);
+         flex-basis: 50%;
+         height: 100%;
+         flex-grow: 1;
+         flex-shrink: 1;
+      }
+
+      .dos {
+         background-color: rgb(123, 123, 230);
+         flex-basis: 50%;
+         height: 50%;
+         flex-grow: 1;
+         flex-shrink: 1;
+      }
+      .tres {
+         background-color: rgb(95, 180, 95);
+         flex-basis: 50%;
+         height: 50%;
+         flex-grow: 1;
+         flex-shrink: 1;
+      }
+
+    </style>
+</head>
+<body>
+   <div class="contenedor-flexible">
+      <div class="elemento-flexible uno">1</div>
+      <div class="columna">
+         <div class="elemento-flexible dos">2</div>
+         <div class="elemento-flexible tres">3</div>
+      </div>
+   </div>
+</body>
+</html>
